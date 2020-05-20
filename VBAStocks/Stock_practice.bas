@@ -147,7 +147,7 @@ great_inc_val = WorksheetFunction.Max(Range("L:L"))
 Range("Q2").Value = great_inc_val
 great_dec_val = WorksheetFunction.Min(Range("L:L"))
 Range("Q3").Value = great_dec_val
-great_tot_val = WorksheetFunction.Min(Range("M:M"))
+great_tot_val = WorksheetFunction.Max(Range("M:M"))
 Range("Q4").Value = great_tot_val
 
 
