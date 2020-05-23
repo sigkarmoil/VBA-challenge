@@ -1,6 +1,12 @@
 Attribute VB_Name = "Module2"
 Sub Stock()
-'1.1 Declare Active Worksheet Name
+'1.1 Set code to run to each worksheet
+
+Dim ws As Worksheet
+For Each ws In ThisWorkbook.Worksheets
+ws.Activate
+
+'Codes Below
 Dim aws As String
 aws = ActiveSheet.Name
 
@@ -162,5 +168,7 @@ Range("P4").Value = great_tot_tick
 
 'final touch
 Range("J1").Value = "Ticker"
+'Go to Next Worksheet
+Next ws
 
 End Sub
